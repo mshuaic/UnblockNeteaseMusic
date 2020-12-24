@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 8080 8081
 
-ENTRYPOINT ["node", "app.js"]
+ENTRYPOINT ["node", "app.js", "-p", "8080:8081", "-e","http://music.163.com", "-o", "netease", "qq", "kuwo", "migu", "kugou", "baidu", "xiami", "joox", "youtube"]
